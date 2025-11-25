@@ -9,7 +9,14 @@ const taskRoutes = require("./routes/taskRoutes");
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin:"*", 
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true, // allow sending JWT token or cookies
+  })
+);
 app.use(express.json());
 
 // DB
