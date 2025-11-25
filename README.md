@@ -4,6 +4,15 @@ This repository contains the **complete full-stack solution** for the AnyThingAI
 It includes a fully working **Node.js backend**, **React (Vite) frontend**, **JWT authentication**, and a **Postman collection** for testing.
 
 ---
+🌐 Live Deployment
+
+You can access the deployed project here:
+
+🔗 Live Frontend: [https://anythingai-assignment.onrender.com/login](https://anythingai-assignment.onrender.com/login)
+
+🔗 Live Backend API: [https://anythingai-assignment-backend.onrender.com/api/v1](https://anythingai-assignment-backend.onrender.com/api/v1)
+
+---
 
 # 📦 Project Overview
 
