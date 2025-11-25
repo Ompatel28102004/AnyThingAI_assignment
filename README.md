@@ -8,7 +8,7 @@ It includes a fully working **Node.js backend**, **React (Vite) frontend**, **JW
 
 You can access the deployed project here:
 
-🔗 Live Frontend: [https://anythingai-assignment.onrender.com/login](https://anythingai-assignment.onrender.com/login)
+🔗 Live Frontend: [https://anythingai-assignment.onrender.com](https://anythingai-assignment.onrender.com)
 
 🔗 Live Backend API: [https://anythingai-assignment-backend.onrender.com/api/v1](https://anythingai-assignment-backend.onrender.com/api/v1)
 
