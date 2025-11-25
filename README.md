@@ -57,7 +57,7 @@ cp .env.example .env
 npm run dev
 ```
 
-Backend runs at → **[http://localhost:5000](http://localhost:5000)**
+Backend runs at → **[http://localhost:3000](http://localhost:3000)**
 
 ### Sample `.env`
 
@@ -83,7 +83,7 @@ Frontend runs at → **[http://localhost:5173](http://localhost:5173)**
 ### Optional `.env`
 
 ```env
-VITE_API_URL=http://localhost:5000/api/v1
+VITE_API_URL=http://localhost:3000/api/v1
 ```
 
 Make sure backend is running before starting the frontend.
