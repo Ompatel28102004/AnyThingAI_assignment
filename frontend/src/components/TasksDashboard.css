@@ -1,0 +1,299 @@
+/* TasksDashboard.css */
+
+.dashboard-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 3rem; /* Space at bottom */
+}
+
+/* --- HEADER SECTION (New) --- */
+.dashboard-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.user-info-block h2 {
+  margin: 0 0 0.25rem 0;
+  color: #1e293b;
+}
+
+.user-details {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-name {
+  font-weight: 600;
+  color: #334155;
+}
+
+/* Role Badges */
+.role-badge {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.role-user {
+  background-color: #e0e7ff; /* Light Indigo */
+  color: #4338ca;
+}
+
+.role-admin {
+  background-color: #fee2e2; /* Light Red */
+  color: #991b1b;
+}
+
+/* Logout Button */
+.btn-logout-dashboard {
+  background-color: white;
+  border: 1px solid #ef4444; /* Red border */
+  color: #ef4444;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-logout-dashboard:hover {
+  background-color: #ef4444;
+  color: white;
+}
+
+/* --- FORM SECTION --- */
+.task-form-section {
+  background-color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  border: 1px solid #e2e8f0;
+}
+
+.section-header h3 {
+  margin: 0 0 1rem 0;
+  color: #334155;
+  font-size: 1.25rem;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.task-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.task-input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.desc-input {
+  font-family: inherit;
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background-color: #6366f1;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #4f46e5;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #64748b;
+  padding: 0.6rem 1.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #f1f5f9;
+}
+
+/* Status Messages */
+.status-banner {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.status-banner.success { background-color: #dcfce7; color: #166534; }
+.status-banner.error { background-color: #fee2e2; color: #991b1b; }
+
+/* --- LIST SECTION --- */
+.list-title {
+  color: #334155;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.task-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.task-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.task-card.completed {
+  background-color: #f8fafc;
+  opacity: 0.75;
+}
+
+.task-card.completed .task-title {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+.task-content {
+  flex: 1;
+  padding-right: 1rem;
+}
+
+.task-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.task-title {
+  font-weight: 600;
+  color: #1e293b;
+  font-size: 1.05rem;
+}
+
+.task-desc {
+  margin: 0 0 0.5rem 2.1rem; 
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.task-meta {
+  margin-left: 2.1rem;
+}
+
+.meta-tag {
+  background-color: #f1f5f9;
+  color: #64748b;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Action Icons */
+.task-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon-btn {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.4rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.edit-btn:hover { background-color: #eff6ff; border-color: #60a5fa; }
+.delete-btn:hover { background-color: #fef2f2; border-color: #f87171; }
+
+/* Checkbox */
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 0;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 2px solid #cbd5e1;
+  border-radius: 4px;
+}
+.checkbox-container:hover input ~ .checkmark { border-color: #94a3b8; }
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #10b981;
+  border-color: #10b981;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 2px dashed #cbd5e1;
+  color: #64748b;
+}
+.empty-icon { font-size: 2rem; margin-bottom: 0.5rem; display: block; }
